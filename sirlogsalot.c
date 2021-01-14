@@ -246,7 +246,7 @@ int main() {
 
         if (strcmp(command, "PING") == 0){
             send_pong(socket_desc, argument);
-            log_with_date("Got ping. Replying with pong...");
+          /*  log_with_date("Got ping. Replying with pong..."); */
         }else if (strcmp(command, "PRIVMSG") == 0){
             char logline[512];
             char *channel = get_argument(line, 1);
